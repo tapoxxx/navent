@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Navent - Pedidos</title>
+
+        <!-- CSS -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media-queries.css">
+        <link rel="stylesheet" href="assets/css/navent.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+	   <script src="assets/js/jquery-1.11.1.min.js"></script>
+	   <script src="assets/js/eventsFunctions.js"></script>
+	   <script src="assets/js/ajaxFunctions.js"></script>
+	
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+    
+   <body id="home">
+		<div id="header">
+			<div class="container">
+				<div class="row">
+					<span id="toggle-menu" onclick="" class="visible-sm visible-xs"><span class="glyphicon glyphicon-chevron-down"></span></span>
+					<a href="/en" id="logo">
+						<img class="img-responsive" src="assets/img/logo.png">
+					</a>
+					<div id="header-menus">
+						<ul id="main-nav">
+							<li><a id="menu-about-us" href="http://www.navent.com/en/about">About us</a></li>
+							<li><a id="menu-our-companies" href="http://www.navent.com/en/companies">Our companies</a></li>
+							<li><a id="menu-our-team" href="http://www.navent.com/en/team">Our team</a></li>
+							<li><a id="menu-press" href="http://www.navent.com/en/press">Press</a></li>
+							<li><a id="menu-contact-us" href="http://www.navent.com/en/contact">Contact us</a></li>
+						</ul>
+						<ul id="language-selection">
+							<li><a href="http://www.navent.com/en/home" class="selected">EN</a></li>
+							<li><a href="http://www.navent.com/es/home">ES</a></li>
+							<li><a href="http://www.navent.com/pt/home">PT</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="home-content" class="container">
+			<div class="row">
+				 <!-- Top content -->
+	        <div class="top-content">
+	        	<div class="container">
+	        	
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 text">
+							<h1 class="wow fadeInLeftBig">Registro de pedidos</h1>
+						</div>
+					</div>
+	
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 r-form-1-box wow fadeInUp">
+							<div class="r-form-1-top">
+								<div class="r-form-1-top-left">
+									<p>Ingrese los datos del pedido:</p>
+								</div>
+							</div>
+							<div class="r-form-1-bottom" id="pedidosFormBox">
+								<form  data-fv-framework="bootstrap" role="form" action="#" method="post">
+									<div class="form-group">
+										<label class="sr-only" for="r-form-1-name">Nombre</label>
+										<input required type="text" pattern="[A-Za-z ]+" maxlength="100" name="r-form-1-name" placeholder="Nombre..." class="r-form-1-first-name form-control" id="r-form-1-name">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="r-form-1-monto">Monto</label>
+										<input type="number" required name="r-form-1-monto" placeholder="Monto..." class="r-form-1-monto form-control" id="r-form-1-monto">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="r-form-1-descuento">Monto</label>
+										<input type="number" name="r-form-1-descuento" min="0" max="100" placeholder="Descuento..." class="r-form-1-descuento form-control" id="r-form-1-descuento">
+									</div>
+									<button type="submit" class="btn">Guardar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+	                
+	            </div>
+	        </div>
+			</div>
+		</div>
+	</body>
+
+</html>
